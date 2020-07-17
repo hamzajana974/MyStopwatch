@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            background-color:black;
+            text-align: center;
+        }
+       .labels{
+           font-size: xx-large;
+           float: left;
+       }
+       table{
+           margin: auto;
+       }
+       table td{
+           padding: 10px;
+       }
+       table td p{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 25px;
+           color: whitesmoke;
+       }
+       #heading{
+           color: beige;
+           font-size: 80px;
+       }
+       h1{
+        font-size: 80px;
+       }
+table td button{
+    width: 80px;
+    height: 58px;
+    border-radius: 5px ;
+background-color: black;
+color: snow;
+font-size: 26px;
+}
+#stop{
+    background-color: darkred;
+    color: seashell;
+}
+body{
+    background-image: url(images/img.jpg); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    </style>
+</head>
+<body>
+    <div style="background-image: url(images/img.jpg);"></div>
+    <h1 id="heading">Stop Watch</h1>
+    <table>
+        <tr>
+            <td> 
+                <h1 class="label" id="hr">00</h1>
+                <p>Hours</p>
+            </td>
+            <td> 
+                <h1 class="label" id="min">00</h1>
+                <p>Minutes</p>
+            </td>
+            <td> 
+                <h1 class="label" id="sec">00</h1>
+                <p>Seconds</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="start()" id="start">Start</button>
+            </td>
+            <td>
+                <button onclick="reset()" id="reset">Reset</button>
+            </td>
+            <td>
+                <button onclick="stop()" id="stop">Stop</button>
+            </td>
+
+        </tr>
+    </table>
+    <script src="app.js" ></script>
+</body>
+</html>
